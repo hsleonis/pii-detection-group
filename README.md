@@ -1,10 +1,13 @@
 # HPI PII Detection
 Research Group works on PII Detection on unstructured textual data using Regex and Deep Learning techniques.
 
-* outlier-detection --> Detect missclassied PIIs.
+## Regular Expression
+regex --> Detect PIIs using Regular expressions.
+  *  NAME, ADDRESS, PHONE, SOCIAL SECURITY, BANK ACCOUNT NUMBER
 
-* pii-detection --> Detect PIIs in unstructured text using Machine Learning.
+# PII Detection
+pii-detection --> Detect PIIs in unstructured text using Deep Learning.
   *  NAME, EMAIL, LOCATION, PHONE NUMBER
 
-* regex --> Detect PIIs using Regular expressions.
-  *  NAME, ADDRESS, PHONE, SOCIAL SECURITY, BANK ACCOUNT NUMBER
+## Outlier Detection
+outlier-detection --> Detect missclassied PIIs.
