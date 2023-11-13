@@ -1,3 +1,5 @@
+![HPI](https://upload.wikimedia.org/wikipedia/commons/f/f2/Hasso-Plattner-Institut_logo.svg)
+
 # HPI PII Detection
 Research Group works on PII Detection on unstructured textual data using Regex and Deep Learning techniques.
 
