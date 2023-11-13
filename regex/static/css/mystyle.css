@@ -1,0 +1,239 @@
+body{
+    padding-bottom: 100px;
+}
+.navbar{
+    background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
+    font-size: large;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header .navbar .navbar-nav a{
+    color: #fdfdfd;
+}
+.navbar-toggler{
+    border-color: #1b1717;
+    color: #fdfdfd;
+    border: 2px solid;
+}
+
+.navbar-toggler-icon{
+   
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+.card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+
+.header-banner{
+    background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
+    padding: 30px 15px; 
+    padding-top: 100px;
+}
+.main-content-wrapper{
+    padding: 30px 15px; 
+}
+
+.header-banner .col-md-5{
+    margin-bottom: 15px;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.header-banner img{
+    width: 100%;
+    border-radius: 12px;
+
+}
+@media screen and (max-width: 767px) {
+    .header-banner img{
+        margin-top: 30px;
+    }
+}
+.inner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: #fff;
+}
+.main-content-wrapper .inner-content{
+    color: #1b1717;
+}
+.inner-content h3{
+    font-size: 42px;
+}
+.inner-content p{
+    font-size: 20px;
+}
+.inner-content button{
+    color: #fff;
+    border-color: #c03afe;
+    margin-top: 25px;
+    font-size: 28px;
+}
+.main-content-wrapper .inner-content button{
+    color: #1b1717;
+}
+.main-content-wrapper .inner-content button:hover{
+    color: #fbf5f5;
+}
+
+.main-content-wrapper .inner-content h3{
+    font-size: 36px;
+}
+.main-content-wrapper .inner-content p{
+    font-size: 16px;
+}
+.main-content-wrapper .inner-content button{
+   
+    font-size: 24px;
+}
+.inner-content button:hover, .inner-content button:focus{
+    background-color: #5903e4;
+    border-color: rgba(85,0,227,1);
+}
+
+.main-content-wrapper .image-container{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.main-content-wrapper .nav-tabs{ 
+    width: 100%;
+}
+.main-content-wrapper .nav-tabs{ 
+    width: 100%;
+}
+.main-content-wrapper .nav-tabs .nav-item i{ 
+   display: block;
+   color:rgb(10, 111, 243);
+   font-size: 40px;
+}
+.main-content-wrapper .nav-tabs .nav-item span{ 
+   display: block;
+}
+.text-entity-tab-content{
+    padding: 15px 0px;
+    
+}
+.text-entity-tab-content .control-bar {
+    display: flex;
+    padding:0px 10px;
+    padding-top: 5px;
+    background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
+}
+.named-entity-text{
+    cursor: pointer;
+    padding: 10px 15px;
+    color: black;
+    font-size: 22px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.named-entity-text.active{
+   background-color: #fff;
+}
+.named-entity-file{
+    cursor: pointer;
+    padding: 10px 15px;
+    color: black;
+    font-size: 22px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.named-entity-file.active{
+    background-color: #fff;
+ }
+#file-input{
+    display: none;
+}
+.enetities-column{
+    padding: 25px 15px;
+    min-height: 150px;
+}
+.enetities-column p{
+    border: 3px dotted #1b1717;
+    padding:10px;
+    font-size: 24px;
+    min-height: 150px;
+}
+.enetities-column p::selection{
+    color: red;
+}
+div#myTabContent{
+    width: 100%;
+}
+
+.extracted-text-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.extracted-text-list li{
+    background-color: rgb(10, 111, 243);
+    color: #fff;
+    font-size: 22px;
+    border-radius: 25px;
+    padding: 5px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* For output styling */
+
+/* Highlighted styles for email addresses */
+/* Add CSS classes to style each category separately */
+.email-info {
+    background-color: #E8F6EF;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block; /* Display each category on a new line */
+}
+
+.phone-info {
+    background-color: #F6EFE8;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block; /* Display each category on a new line */
+}
+
+.address-info {
+    background-color: #E8E8F6;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block; /* Display each category on a new line */
+}
+
+#training-text mark {
+    background-color: rgba(10, 111, 243, 0.2); /* Change the background color as needed */
+    color: inherit;
+    padding: 0 3px; /* Adjust padding as needed for spacing around the text */
+    border-radius: 2px; /* Add rounded corners if desired */
+}

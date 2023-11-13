@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Landing page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mystyle.css') }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <!-- ***** Header Area End  -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="#index2" class="navbar-brand">
+                  <img src="{{ url_for('static', filename='images/logo.png') }}" height="60" alt="Cool">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#about" class="nav-item nav-link">About Us</a>
+                        <a href="#services" class="nav-item nav-link">Services</a>
+                        <a href="#pricing" class="nav-item nav-link">Pricing</a>
+                        <a href="#contact" class="nav-item nav-link">Contact Us</a>
+
+                    </div>
+                </div>
+            </div>
+          
+        </nav>
+    </div>
+   <!-- Header Area End ***** --> 
+
+    <!-- ***** Home Area starts ***** -->
+    
+
+    <!-- ***** Home Area End ***** -->
+
+    <section class="header-banner">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+              <div class="inner-content">
+                <h3 class="primary-heading">
+                  Train a new AI model in hours
+                </h3>
+                <p class="primary-para">
+                  Cimpress is a scriptable annotation tool so efficient that data scientists can do the annotation themselves, enabling a new level of rapid iteration.
+                </p>
+                <p class="secondary-pera">
+                  Today’s transfer learning technologies mean you can train production-quality models with very few examples. With Cimpress you can take full advantage of modern machine learning by adopting a more agile approach to data collection. You'll move faster, be more independent and ship far more successful projects.
+                </p>
+                <button type="button" class="btn btn-outline-primary how-it-works-cta">How it works <i class="fa"></i></button>
+              </div>
+            </div>
+            <div class="col-md-6 offset-md-1">
+              <div class="image-container"><img src="{{ url_for('static', filename='./images/Command Line.webp') }}" alt="Command Line Image"></div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-content-wrapper">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="inner-content">
+                <h3 class="primary-heading">
+                  The missing piece in your data science workflow
+                </h3>
+                <p class="primary-para">
+                  Cimpress brings together state-of-the-art insights from machine learning and user experience. 
+                        With its continuous active learning system, you're only asked to annotate examples the model does not 
+                        already know the answer to. The web application is powerful, extensible and follows modern UX principles. 
+                        The secret is very simple: it's designed to help you focus on one decision at a time and keep you clicking – like Tinder for data.
+                       
+                </p>
+                <p class="secondary-pera">
+                  Everyone knows data scientists should spend more time looking at their data. When good habits are hard to form, 
+                  the trick is to remove the friction. Cimpress makes the right thing easy, encouraging you to spend more time understanding 
+                  your problem and interpreting your results.
+                </p>
+                <button type="button" class="btn btn-outline-primary how-it-works-cta">Try the demo here <i class="fa"></i></button>
+              </div>
+            </div>
+            <div class="col-md-7 offset-md-1">
+              <div class="image-container">
+                <!-- <img src="./images/Command Line.webp" alt="Command Line Image"> -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="bi bi-zoom-in text-center"></i><span>Named Entity Recognition</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="bi bi-fingerprint text-center"></i><span>Text Classification</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="bi bi-braces-asterisk text-center"></i><span>Regular Expressions</span></a>
+                  </li>
+                </ul>
+
+
+              <!-- ***** Main work ***** -->  
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      <div class="text-entity-tab-content">
+                          <div class="control-bar">
+                            <div class="named-entity-text active">
+                              Named Entities(Text)<br>
+                              <button type="button" class="btn btn-outline-primary" id="bt-email">Email</button>
+                              <button type="button" class="btn btn-outline-secondary" id="bt-phone">Phone Number</button>
+                              <button type="button" class="btn btn-outline-success" id="bt-date">Date</button>
+                              <button type="button" class="btn btn-outline-danger" id="bt-gender">Gender</button>
+                              <button type="button" class="btn btn-outline-warning" id="bt-ip">IP address</button>
+                              <button type="button" class="btn btn-outline-info" id="bt-credit">Credit Card No</button>
+                              <button type="button" class="btn btn-outline-dark" id="bt-name">Name</button>
+                              <button type="button" class="btn btn-outline-success" id="bt-SSN">Social No</button>
+                              <button type="button" class="btn btn-outline-danger" id="bt-Address">Address</button>
+                            </div>
+                          
+                              <label class="named-entity-file" for="file-input">
+                                <span>Named Entities(File)</span>
+                                <input type="file" name="file" id="file-input">
+                              </label>
+                          </div>
+                          <div class="row">
+
+
+                           
+                            <div class="row">
+                                <div class="col-md-8 entities-column">
+                                    <!-- Updated #training-text element in your HTML -->
+                                    <p id="training-text" contenteditable="true">
+                                      <!-- Users can paste their text here -->
+                                    </p>
+
+                                    <div class="card-footer text-center">
+                                        <button type="button" class="btn btn-success" id="add-label-button"><i class="bi bi-check-circle-fill" id="check"></i></button>
+                                        <button type="button" class="btn btn-danger"><i class="bi bi-file-excel-fill" id="cross"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 entities-column">
+                                  <h4>Labels</h4>
+                                  <ul class="extracted-text-list">
+                                      <!-- Display extracted information here -->
+                                  </ul>
+                                  
+                                  <button type="button" class="btn btn-success" id="download-csv-button">Download CSV</button>
+                                  
+
+                              </div>
+                              
+                            </div>
+                           
+
+
+
+                          </div>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Services section starts***** -->
+    <!-- <section class="bg-light pt-5 pb-5" id="services">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+              <a href="index.html">
+                <div class="card pt-2" style="width:100%;">
+                    <i class="bi bi-zoom-in text-center" style="font-size:80px;color:rgb(10, 111, 243);"></i>
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Named Entity Recognition</h4>
+                      <p class="card-text">Cimpress brings together state-of-the-art insights from machine learning and user experience. 
+                        With its continuous active learning system, you're only asked to annotate examples the model does not 
+                        already know the answer to. The web application is powerful, extensible and follows modern UX principles. 
+                        The secret is very simple: it's designed to help you focus on one decision at a time and keep you clicking – like Tinder for data.
+                        Everyone knows data scientists should spend more time looking at their data. When good habits are hard to form, 
+                        the trick is to remove the friction. Cimpress makes the right thing easy, encouraging you to spend more time understanding 
+                        your problem and interpreting your results.
+                      </p>
+                    </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+              <a href="index.html">
+                <div class="card pt-2" style="width:100%;">
+                    <i class="bi bi-fingerprint text-center" style="font-size:80px;color:rgb(10, 111, 243);"></i>
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Text Classification</h4>
+                      <p class="card-text">Cimpress brings together state-of-the-art insights from machine learning and user experience. 
+                        With its continuous active learning system, you're only asked to annotate examples the model does not 
+                        already know the answer to. The web application is powerful, extensible and follows modern UX principles. 
+                        The secret is very simple: it's designed to help you focus on one decision at a time and keep you clicking – like Tinder for data.
+                        Everyone knows data scientists should spend more time looking at their data. When good habits are hard to form, 
+                        the trick is to remove the friction. Cimpress makes the right thing easy, encouraging you to spend more time understanding 
+                        your problem and interpreting your results.
+                      </p>
+                    </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+              <a href="index.html">
+                <div class="card pt-2" style="width:100%;">
+                    <i class="bi bi-braces-asterisk text-center" style="font-size:80px;color:rgb(10, 111, 243);"></i>
+                    <div class="card-body">
+                      <h4 class="card-title text-center">Regular Expressions</h4>
+                      <p class="card-text">Cimpress brings together state-of-the-art insights from machine learning and user experience. 
+                        With its continuous active learning system, you're only asked to annotate examples the model does not 
+                        already know the answer to. The web application is powerful, extensible and follows modern UX principles. 
+                        The secret is very simple: it's designed to help you focus on one decision at a time and keep you clicking – like Tinder for data.
+                        Everyone knows data scientists should spend more time looking at their data. When good habits are hard to form, 
+                        the trick is to remove the friction. Cimpress makes the right thing easy, encouraging you to spend more time understanding 
+                        your problem and interpreting your results.
+                      </p>
+                    </div>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+          
+        </div>
+      </section> -->
+
+    <!-- ***** Services section starts***** -->  
+
+
+</body>
+
+<script>
+
+$(document).ready(function () {
+    // Function to add a label to the extracted-text-list
+    function addLabelToExtractedList(labelText) {
+        $("ul.extracted-text-list").append(`<li>${labelText}</li>`);
+    }
+
+    // Function to update the extracted-text-list
+    function updateExtractedList(extractedInfo) {
+        // Clear the existing list
+        $("ul.extracted-text-list").empty();
+
+        // Loop through the extracted information and add it to the list
+        for (const key in extractedInfo) {
+            if (extractedInfo.hasOwnProperty(key)) {
+                const data = extractedInfo[key];
+
+                // Check if there's data for this type
+                if (data.length > 0) {
+                    const label = `${key}(${data.length}): ${data.join(', ')}`;
+                    addLabelToExtractedList(label);
+                }
+            }
+        }
+    }
+
+    // Handle the "add-label-button" click event
+    $("#add-label-button").on("click", function () {
+        const trainingText = $("#training-text").text().trim();
+
+        // Send the text to the server for extraction
+        $.ajax({
+            type: 'POST',
+            url: '/extract',
+            data: { text: trainingText },
+            success: function (response) {
+                updateExtractedList(response);
+            },
+            error: function (error) {
+                console.error("Error extracting information:", error);
+            }
+        });
+    });
+
+    // Handle changes in the #training-text content
+    $("#training-text").on("input", function () {
+        const trainingText = $(this).text().trim();
+
+        // Send the text to the server for extraction
+        $.ajax({
+            type: 'POST',
+            url: '/extract',
+            data: { text: trainingText },
+            success: function (response) {
+                updateExtractedList(response);
+            },
+            error: function (error) {
+                console.error("Error extracting information:", error);
+            }
+        });
+    });
+});
+
+
+
+
+</script>
+</html>
