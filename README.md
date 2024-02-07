@@ -11,5 +11,7 @@ regex --> Detect PIIs using Regular expressions.
 pii-detection --> Detect PIIs in unstructured text using Deep Learning.
   *  NAME, EMAIL, LOCATION, PHONE NUMBER
 
+<img src=""  width="350" height="202">
+
 ## Outlier Detection
 outlier-detection --> Detect missclassied PIIs.
