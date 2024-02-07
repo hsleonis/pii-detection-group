@@ -6,6 +6,7 @@ pip install simpletransformers
 ```
 
 - Place pre-trained models folder at: `pretrained`.
+  - https://www.dropbox.com/scl/fi/kijxq419hxd0pevxfiszp/pretrained.zip?rlkey=qtofftsveyo8uiwqmypwh0ese&dl=0
 
 - Predict PIIs using the pre-trained models:
 ```python
