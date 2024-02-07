@@ -14,7 +14,7 @@ from simpletransformers.ner import NERModel
 model_name = "bert"
 
 model = NERModel(
-        choice, f"pretrained/bert",
+        model_name, f"pretrained/{model_name}",
         use_cuda=False  # remove for GPU
     )
 
