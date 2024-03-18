@@ -26,8 +26,8 @@ predictions, _ = model.predict([text])
 
 The `dataset.zip` contains the complete annotated HPII dataset used in the project.
 It has two (2) CSV files:
-- Training contains 70% of EnronPII + 70% of WikiPII: *hpii_train.csv*
-- Testing 30% of EnronPII + 30% of WikiPII: *hpii_test.csv*
+- Training contains 70% of EnronPII + 70% of WikiPII: **hpii_train.csv**
+- Testing 30% of EnronPII + 30% of WikiPII: **hpii_test.csv**
 
 # Entities
 
