@@ -21,3 +21,26 @@ model = NERModel(
 
 predictions, _ = model.predict([text])
 ```
+
+# Dataset
+
+The `dataset.zip` contains the complete annotated HPII dataset used in the project.
+It has two (2) CSV files:
+- Training contains 70% of EnronPII + 70% of WikiPII: hpii_train.csv
+- Testing 30% of EnronPII + 30% of WikiPII: hpii_test.csv
+
+# Entities
+
+The pretrained models detect following PIIs:
+- Name
+- Location
+- Email Address
+- Phhone number
+
+Each of these entities are predicted into specific tokens:
+- `B` : Beginning of an entity
+- `I` : Inside token of an entity
+- `L` : End of an entity
+- `U` : Single token entity
+- `O` : Non-PII
+
