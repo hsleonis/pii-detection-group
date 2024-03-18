@@ -1,4 +1,4 @@
-# Use Pre-trained Models
+# Pre-trained Models
 
 - Install SimpleTransformers:
 ```bash
