@@ -13,4 +13,21 @@ scikit-learn>=1.0.0
 seqeval>=1.2.0
 
 # Visualization
-matplotlib>=3.5
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Progress tracking and logging
+tqdm>=4.62.0
+tensorboard>=2.8.0
+
+# Optional: Weights & Biases for experiment tracking
+# wandb>=0.12.0
+
+# Development and testing
+pytest>=6.0.0
+jupyter>=1.0.0
+notebook>=6.4.0
+
+# Additional utilities
+python-dateutil>=2.8.0
+pytz>=2021.1
